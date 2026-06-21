@@ -1,0 +1,1648 @@
+/* ---------- Root Colors ---------- */
+
+:root{
+
+    --bg:#F8F4EA;
+
+    --card:#FFFDF8;
+
+    --gold:#C99A1C;
+
+    --gold-dark:#A87900;
+
+    --text:#4B3B2A;
+
+    --heading:#8B5E00;
+
+    --subtitle:#7A6A52;
+
+    --border:#E8DDBF;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --text-h1:36px;
+--text-h2:30px;
+--text-h3:24px;
+--text-h4:20px;
+--text-body:15px;
+--text-small:13px;
+
+/* Font Weights */
+--fw-bold:700;
+--fw-semibold:600;
+--fw-regular:400;
+/* Spacing Scale */
+--space-xs:4px;
+--space-sm:8px;
+--space-md:16px;
+--space-lg:24px;
+--space-xl:32px;
+
+}
+
+/* ---------- Main App ---------- */
+
+.stApp{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+/* ---------- Typography ---------- */
+
+
+
+h1{
+
+    color:var(--heading) !important;
+
+    font-weight:700;
+
+}
+
+h2,
+h3,
+h4{
+
+    color:#5B4636 !important;
+
+    font-weight:600;
+
+}
+
+small{
+
+    color:var(--subtitle);
+
+}
+
+/* ---------- Sidebar ---------- */
+
+section[data-testid="stSidebar"]{
+
+    background:var(--card) !important;
+
+    border-right:1px solid var(--border);
+
+}
+
+section[data-testid="stSidebar"] *{
+
+    color:var(--text) !important;
+
+}
+
+section[data-testid="stSidebar"] hr{
+
+    border-color:var(--border);
+
+}
+
+/* ---------- Hero Section ---------- */
+
+.hero-section{
+
+    background:linear-gradient(135deg,#FFFDF8,#F9F4E8);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:var(--space-lg);
+
+    margin-bottom:var(--space-lg);
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:10px;
+
+}
+
+.hero-icon{
+
+    font-size:36px;
+
+}
+
+.hero-title span:last-child{
+
+    font-size:var(--text-h1);
+
+    font-weight:800;
+
+    color:var(--heading);
+
+}
+
+.hero-subtitle{
+
+    font-size:var(--text-h4);
+
+    font-weight:var(--fw-semibold);
+
+    color:#5B4636 !important;
+
+    margin-bottom:15px;
+
+}
+
+.hero-description{
+
+    font-size:var(--text-body);
+
+    color:var(--subtitle) !important;
+
+    line-height:1.8;
+
+    max-width:900px;
+
+}
+
+/* ==========================================
+   InsightAI Premium Theme
+   Part 2
+========================================== */
+
+
+/* ---------- Buttons ---------- */
+
+.stButton>button{
+    width:100%;
+    background:var(--gold);
+    color:white !important;
+    height: 42px;
+    border:none;
+    border-radius:10px;
+    padding:6px 16px;
+    font-size:14px;
+    font-weight:600;
+    transition:.25s;
+    box-shadow:0 5px 15px rgba(201,154,28,.25);
+}
+
+.stButton>button:hover{
+
+    background:var(--gold-dark);
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+
+
+
+/* ---------- KPI Cards ---------- */
+
+.metric-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:24px;
+
+    box-shadow:var(--shadow);
+
+    transition:.25s;
+
+}
+
+.metric-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.metric-title{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#7B6A52;
+
+}
+
+.metric-value{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:var(--heading);
+
+    margin-top:10px;
+
+}
+
+.metric-subtitle{
+
+    margin-top:6px;
+
+    color:#A18E74;
+
+    font-size:13px;
+
+}
+
+
+
+
+/* ==========================================
+   InsightAI Premium Theme
+   Part 3
+========================================== */
+
+
+/* ---------- Select Box ---------- */
+
+div[data-baseweb="select"]{
+
+    background:var(--card)!important;
+
+    border:1px solid var(--border)!important;
+
+    border-radius:14px!important;
+
+    box-shadow:none!important;
+
+}
+
+div[data-baseweb="select"] *{
+
+    color:var(--text)!important;
+
+}
+[data-testid="stSidebarNav"]{
+    display:none;
+}
+
+/* ---------- Text Input ---------- */
+
+/* Text Input */
+div[data-baseweb="input"]{
+    background: var(--card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 14px !important;
+    transition: all .2s ease;
+}
+
+div[data-baseweb="input"]:focus-within{
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 0 2px rgba(201,150,12,.15) !important;
+}
+
+div[data-baseweb="input"] input{
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    color: var(--text) !important;
+    box-shadow: none !important;
+    padding: 12px !important;
+}
+
+/* ---------- Text Area ---------- */
+
+textarea{
+
+    background:var(--card)!important;
+
+    border:1px solid var(--border)!important;
+
+    border-radius:14px!important;
+
+    color:var(--text)!important;
+
+}
+
+
+/* ---------- Expander ---------- */
+
+div[data-testid="stExpander"]{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+div[data-testid="stExpander"] details summary{
+
+    font-weight:600;
+
+}
+
+
+/* ---------- Info Box ---------- */
+
+[data-testid="stInfo"]{
+
+    background:#FFF9EE!important;
+
+    border:1px solid var(--border)!important;
+
+    color:var(--text)!important;
+
+    border-radius:16px;
+
+}
+
+
+/* ---------- Success Box ---------- */
+
+[data-testid="stSuccess"]{
+
+    background:#F7FBF5!important;
+
+    border:1px solid #C9E6C5!important;
+
+    color:#355E3B!important;
+
+    border-radius:16px;
+
+}
+
+
+/* ---------- Warning Box ---------- */
+
+[data-testid="stWarning"]{
+
+    background:#FFF8E8!important;
+
+    border:1px solid #EBCB78!important;
+
+    color:#8A6B00!important;
+
+    border-radius:16px;
+
+}
+
+
+/* ---------- Error Box ---------- */
+
+[data-testid="stError"]{
+
+    border-radius:16px;
+
+}
+
+
+/* ---------- DataFrame ---------- */
+
+[data-testid="stDataFrame"]{
+
+background:white;
+
+padding:15px;
+
+border-radius:20px;
+
+border:1px solid #E8DDBF;
+
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+
+/* ---------- Tables ---------- */
+
+table{
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#FAF4E5;
+
+}
+
+thead th{
+
+    color:var(--heading)!important;
+
+    font-weight:700;
+
+}
+
+tbody td{
+
+    color:var(--text)!important;
+
+}
+
+
+/* ---------- Horizontal Rule ---------- */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid var(--border);
+
+}
+
+
+/* ---------- Divider ---------- */
+
+[data-testid="stDivider"]{
+
+    margin:30px 0;
+
+}
+
+/* ==========================================
+   InsightAI Premium Theme
+   Part 4
+
+
+/* ---------- Chat Messages ---------- */
+
+.chat-user{
+
+    background:#FFF8E8;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    margin-bottom:15px;
+
+    border-left:5px solid var(--gold);
+
+}
+
+.chat-ai{
+
+    background:#FFFDF8;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    margin-bottom:15px;
+
+    border-left:5px solid #3B82F6;
+
+}
+
+
+/* ---------- AI Cards ---------- */
+
+.ai-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:var(--space-lg);
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:20px;
+
+}
+
+
+/* ---------- Hover Animation ---------- */
+
+.metric-card,
+
+.hero-section,
+
+.ai-card
+
+{
+
+    transition:.3s;
+
+}
+
+.metric-card:hover,
+
+.hero-section:hover,
+
+.ai-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* Main Page Heading */
+
+.hero-heading h1{
+    margin:0;
+    color:var(--heading);
+    font-size:52px;
+    font-weight:800;
+}
+
+.hero-heading p{
+    margin:6px 0 24px 0;
+    color:#6B5B4A;
+    font-size:22px;
+    font-weight:500;
+}
+
+/* ---------- Fade Animation ---------- */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-section,
+
+.metric-card,
+
+.ai-card{
+
+    animation:fadeIn .4s ease;
+
+}
+
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#C99A1C;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F4EFD8;
+
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:900px){
+
+.hero-title{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.metric-value{
+
+font-size:32px;
+
+}
+
+}
+
+/* ---------- Upload Drop Zone ---------- */
+
+[data-testid="stFileUploaderDropzone"]{
+
+    background:#FFFDF8 !important;
+
+    border:2px dashed #D8B24C !important;
+
+    border-radius:18px !important;
+
+    padding:30px !important;
+
+}
+
+[data-testid="stFileUploaderDropzone"] *{
+
+    color:#4B3B2A !important;
+
+}
+
+/* ---------- Dashboard Cards ---------- */
+/* =========================
+   UPLOAD CARD
+========================= */
+
+
+
+.upload-title{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#4B3B2A;
+
+    margin-bottom:12px;
+
+}
+
+.upload-title span{
+
+    font-size:22px;
+
+    color:#7A6A52;
+
+    font-weight:500;
+
+}
+
+.upload-subtitle{
+
+    color:#7A6A52;
+
+    font-size:18px;
+
+    margin-bottom:8px;
+
+}
+
+.upload-limit{
+
+    color:#9A8A73;
+
+    font-size:15px;
+
+    margin-bottom:25px;
+
+}
+
+[data-testid="stFileUploader"]{
+
+    background:transparent !important;
+
+    border:none !important;
+
+    padding:0 !important;
+
+    box-shadow:none !important;
+
+}
+
+
+
+
+
+[data-testid="stFileUploader"] button{
+
+    background:#C89A12 !important;
+
+    color:white !important;
+
+    border-radius:12px !important;
+
+    border:none !important;
+
+    font-weight:600 !important;
+
+}
+
+/* ==========================================
+   Premium KPI Cards
+========================================== */
+
+.kpi-card{
+
+    background:#FFFDF8;
+
+    border:1px solid #E8DDBF;
+
+    border-radius:22px;
+
+   padding:var(--space-lg);
+
+    min-height:180px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+    text-align:center;
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.kpi-icon{
+
+    width:54px;
+
+    height:54px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#FFF3D6;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.kpi-title{
+
+    font-size:17px;
+
+    color:#7A6A52;
+
+    font-weight:600;
+
+}
+
+.kpi-value{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#8B5E00;
+
+    margin-top:10px;
+
+}
+
+.kpi-subtitle{
+
+    margin-top:8px;
+
+    font-size:14px;
+
+    color:#9A8A73;
+
+}
+.upload-card{
+
+background:white;
+
+padding:var(--space-lg);
+
+border-radius:20px;
+
+border:1px solid #EFE3C6;
+
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+margin-bottom:30px;
+
+}
+
+.upload-header h3{
+
+margin:0;
+
+font-size:28px;
+
+color:#4B3720;
+
+}
+
+.upload-header p{
+
+margin-top:8px;
+
+color:#8B7A60;
+
+font-size:16px;
+
+}
+
+
+
+/* Uploaded filename */
+
+[data-testid="stFileUploaderFileName"]{
+    color:#4B3B2A !important;
+    font-weight:600;
+}
+
+[data-testid="stFileUploader"] small{
+    color:#7A6A52 !important;
+}
+
+/* Executive Summary */
+
+.section-header{
+
+    background:white;
+
+    border-radius:18px;
+
+
+    padding:14px 24px;
+
+    margin:20px 0 24px 0;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.section-title p{
+
+    margin:4px 0 0 0;
+
+    color:var(--subtitle);
+
+    font-size:var(--text-body);
+
+    font-weight:var(--fw-regular);
+
+}
+
+.section-title h2{
+
+    margin:0;
+
+    font-size:var(--text-h2);
+
+    font-weight:var(--fw-bold);
+
+    color:#4B3B2A !important;
+
+    line-height:1.2;
+
+}
+
+.material-symbols-outlined{
+    font-size:24px;
+    color:var(--gold);
+
+    font-weight:normal;
+
+    line-height:1;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    vertical-align:middle;
+
+    user-select:none;
+}
+
+.section-title .material-symbols-outlined{
+
+    font-size:28px;
+
+    color:var(--gold);
+
+    flex-shrink:0;
+
+}
+
+.summary-card{
+
+    background:#EEF6FF;
+
+    border-left:5px solid #3B82F6;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    height:100%;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.ready-card{
+
+    background:#EEF9EE;
+
+    border-left:5px solid #2E8B57;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    height:100%;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.dataset-header{
+
+display:flex;
+align-items:center;
+gap:18px;
+
+background:white;
+
+padding:18px 24px;
+
+border-radius:18px;
+
+border:1px solid #E8DDBF;
+
+margin-bottom:15px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.05);
+
+}
+
+
+.dataset-preview-header{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+
+
+.dataset-preview-header h3{
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2;
+    color: #4B3B2A;
+}
+
+.dataset-preview-header p{
+    margin: 4px 0 0 0 !important;
+    color: #7A6A52;
+}
+
+
+.dataset-preview-header .material-symbols-outlined{
+    font-size: 34px;
+    color: #C99A1C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.small-metric{
+
+background:white;
+
+border:1px solid #E8DDBF;
+
+border-radius:16px;
+
+padding:18px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+height:120px;
+
+}
+
+.small-metric-title{
+
+font-size:15px;
+
+color:#7A6A52;
+
+font-weight:600;
+
+}
+
+.small-metric-value{
+
+font-size:34px;
+
+font-weight:700;
+
+color:#8B5E00;
+
+margin-top:8px;
+
+}
+
+.small-metric-sub{
+
+font-size:13px;
+
+color:#A18E74;
+
+margin-top:6px;
+
+}
+
+.dashboard-panel{
+
+background:#FFFDF8;
+
+border:1px solid #E8DDBF;
+
+border-radius:24px;
+
+padding:var(--space-lg);
+
+margin-top:20px;
+
+box-shadow:0 10px 24px rgba(0,0,0,.06);
+
+}
+
+/* Tabs Container */
+
+/* ============================
+   Premium Navigation Tabs
+============================ */
+
+
+/* ===========================
+   Premium Tabs
+=========================== */
+
+.stTabs{
+    margin:20px 0 30px;
+}
+
+/* Navigation Container */
+.stTabs [data-baseweb="tab-list"]{
+    display:flex;
+    gap:12px;
+
+    background:#FFFDF8;
+
+    padding:10px;
+
+    border:1px solid #E8DDBF;
+    border-radius:18px;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.05);
+}
+
+/* Individual Tab */
+.stTabs [data-baseweb="tab"]{
+
+    flex:1;
+
+    height:54px;
+
+    border-radius:14px;
+
+    background:#FFFDF8 !important;
+
+    color:#6B5B4A !important;
+
+    border:1px solid transparent;
+
+    transition:all .25s ease;
+
+}
+
+
+/* Tab Text */
+.stTabs [data-baseweb="tab"] p{
+    font-size:15px;
+    font-weight:600;
+    white-space:nowrap;
+    margin:0;
+}
+
+/* Hover */
+.stTabs [data-baseweb="tab"]:hover{
+
+    background:#FFF3D6 !important;
+
+    border-color:#E8DDBF;
+
+    color:#8B5E00 !important;
+
+}
+
+/* Active Tab */
+/* Active Tab */
+
+.stTabs [aria-selected="true"]{
+
+    background:#F4D06F !important;
+
+    color:#4B3B2A !important;
+
+    border:1px solid #D4A72C !important;
+
+    box-shadow:0 6px 16px rgba(201,154,28,.25);
+
+}
+
+/* Active Tab Text */
+
+.stTabs [aria-selected="true"] *{
+
+    color:#4B3B2A !important;
+
+    font-weight:700 !important;
+
+}
+
+
+/* Hide default underline */
+.stTabs [data-baseweb="tab-highlight"]{
+
+    display:none;
+
+}
+.nav-title{
+
+margin-bottom:12px;
+
+}
+
+.nav-title h3{
+
+margin:0;
+
+font-size:24px;
+
+color:#4B3B2A;
+
+}
+
+.nav-title p{
+
+margin-top:4px;
+
+color:#7A6A52;
+
+font-size:15px;
+
+}
+
+
+/* Reduce spacing inside columns */
+
+div[data-testid="column"] > div{
+    gap:0.4rem;
+}
+
+/* Reduce bottom spacing */
+
+.block-container{
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
+/* Plotly chart */
+
+.js-plotly-plot{
+    border-radius:14px;
+    overflow:hidden;
+}
+
+
+/* Chart placeholder */
+
+.chart-placeholder{
+
+    background:#FCFAF5;
+
+    border:1px dashed #D7C8A0;
+
+    border-radius:16px;
+
+    min-height:220px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    color:#8A7A62;
+
+    margin-top:15px;
+
+}
+
+/* ===== Visualization Selectboxes ===== */
+
+.stSelectbox label{
+    color:#4B3B2A !important;
+    font-weight:600;
+    font-size:14px;
+}
+
+.stSelectbox [data-baseweb="select"]{
+
+    min-height:44px !important;
+
+}
+
+.stSelectbox [data-baseweb="popover"]{
+
+    z-index:9999 !important;
+
+}
+
+.stSelectbox ul{
+
+    max-height:220px !important;
+    overflow-y:auto !important;
+
+}
+
+div[data-testid="stButton"] button{
+
+    color:#ffffff;
+
+}
+
+
+
+/* Visualization card */
+.st-emotion-cache-1fa7v35{
+    background:#FFFDF8  !important;
+}
+
+/* Delete button */
+
+
+/* =====================================================
+   InsightAI v2 - Landing Components
+===================================================== */
+/* ===========================
+   Landing Hero
+=========================== */
+
+.landing-hero{
+
+    padding:20px 0 40px 0;
+
+}
+
+.landing-tag{
+    margin:0 0 8px 0;
+}
+
+.landing-title{
+
+    margin:0 !important;
+    padding:0;
+
+    font-size:78px;
+
+    line-height:0.95;
+
+    font-weight:800;
+
+    color:var(--heading);
+
+    letter-spacing:-2px;
+
+}
+
+.landing-subtitle{
+
+    margin:12px 0 0 0;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#4B3B2A;
+
+    line-height:1.25;
+
+}
+
+.landing-description{
+
+    margin:16px 0 0 0;
+
+    max-width:650px;
+
+    font-size:20px;
+
+    line-height:1.7;
+
+    color:#7A6A52;
+
+}
+
+/* ===========================
+   Landing Illustration
+=========================== */
+
+.landing-visual{
+
+    height:360px;
+
+    position:relative;
+
+}
+
+.visual-card{
+
+    position:absolute;
+
+    width:110px;
+
+    height:110px;
+
+    border-radius:22px;
+
+    background:#FFFDF8;
+
+    border:1px solid var(--border);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.visual-card .material-symbols-outlined{
+
+    font-size:56px;
+
+    color:var(--gold);
+
+}
+
+.visual-chart{
+
+    top:30px;
+
+    right:110px;
+
+}
+
+.visual-ai{
+
+    top:120px;
+
+    right:20px;
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:30px;
+
+}
+
+.visual-ai .material-symbols-outlined{
+
+    font-size:84px;
+
+}
+
+.visual-pie{
+
+    bottom:20px;
+
+    right:120px;
+
+}
+
+/* =========================================
+   Hero Right Card
+========================================= */
+
+.hero-card{
+
+    background:linear-gradient(180deg,#FFFDF8 0%,#FFF9EE 100%);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    min-height:340px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.05);
+
+}
+
+.hero-card-icon{
+
+    font-size:72px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-card-title{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--heading);
+
+    margin-bottom:12px;
+
+}
+
+.hero-card-text{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    color:var(--subtitle);
+
+    max-width:280px;
+
+}
+
+/*==========================================
+FEATURE CARDS
+==========================================*/
+
+.feature-card{
+
+    background:#FFFDF8;
+
+    border:1px solid #E8DDBF;
+
+    border-radius:20px;
+
+    padding:28px;
+    position:relative;
+    min-height:260px;
+
+    transition:.25s ease;
+
+    cursor:default;
+
+}
+
+.feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    border-radius:20px 20px 0 0;
+
+    background:#C99A1C;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.feature-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:14px;
+
+    background:#FFF6DD;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:22px;
+
+}
+
+.feature-icon .material-symbols-outlined{
+
+    font-size:30px;
+
+    color:#C99A1C;
+
+}
+
+.feature-card h3{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#4B3B2A;
+
+    margin-bottom:14px;
+
+}
+
+.feature-card p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    color:#6B5B4A;
+
+    margin:0;
+
+}
+
+button[kind="secondary"] {
+    border-radius: 10px !important;
+    border: 1px solid #C9960C !important;
+    background: #C9960C !important;
+    color: white !important;
+    transition: 0.2s;
+}
+
+button[kind="secondary"]:hover {
+    background: #B68608 !important;
+    border-color: #B68608 !important;
+    color: white !important;
+}
