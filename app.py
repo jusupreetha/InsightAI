@@ -752,14 +752,18 @@ analytics
         )
                 
                 elif chart_type == "Line":
+                    if x == y:
+                        fig = px.line(df, y=y)
+                    else:
 
-                    chart_data = (
+                        chart_data = (
         df.groupby(x)[y]
         .sum()
         .reset_index()
     )
+                    
 
-                    fig = px.line(
+                        fig = px.line(
         chart_data,
         x=x,
         y=y

@@ -22,3 +22,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+backup.txt
+temp_charts/
